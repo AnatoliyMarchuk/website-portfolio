@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  --line-color: #e5e7eb;
+}
+html.dark {
+  --line-color: rgba(255, 255, 255, 0.2);
+}
+.borderBlack {
+  @apply border border-black/10;
+}
+.borderGray {
+  @apply rounded-2xl border border-black/10 shadow-md dark:border-white/40;
+}
+.textDescriptions {
+  @apply text-center text-black/70 dark:text-white/70;
+}
+.subTitles {
+  @apply h-10 text-center font-semibold dark:text-white/80;
+}
